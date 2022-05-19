@@ -1,13 +1,12 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
+exports.__esModule = true;
 exports.logger = exports.getValue = void 0;
-function getInputValue(elementID) {
-    var inputElement = document.getElementById(elementID);
+var getInputValue = function (elementID) {
+    var inputElement = (document.getElementById(elementID));
     return inputElement.value;
-}
+};
 exports.getValue = getInputValue;
-function logger(message) {
+var logger = function (message) {
     console.log(message);
-}
+};
 exports.logger = logger;
-//# sourceMappingURL=utility.js.map

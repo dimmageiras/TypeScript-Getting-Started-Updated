@@ -1,11 +1,12 @@
-function getInputValue(elementID: string): string {
+const getInputValue = (elementID: string): string => {
+	const inputElement: HTMLInputElement = <HTMLInputElement>(
+		document.getElementById(elementID)
+	);
+	return inputElement.value;
+};
 
-  const inputElement: HTMLInputElement = <HTMLInputElement>document.getElementById(elementID);
-  return inputElement.value;
-}
+const logger = (message: string): void => {
+	console.log(message);
+};
 
-function logger(message: string): void {
-  console.log(message);
-}
-
-export { getInputValue as getValue, logger }
+export {getInputValue as getValue, logger};

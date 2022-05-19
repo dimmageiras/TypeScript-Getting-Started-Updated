@@ -1,7 +1,6 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Player = void 0;
-var Player = (function () {
+exports.__esModule = true;
+var Player = /** @class */ (function () {
     function Player() {
     }
     Player.prototype.formatName = function () {
@@ -9,5 +8,4 @@ var Player = (function () {
     };
     return Player;
 }());
-exports.Player = Player;
-//# sourceMappingURL=player.js.map
+exports["default"] = Player;

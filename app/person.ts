@@ -1,5 +1,7 @@
-export interface Person {
-  name: string;
-  age?: number;
-  formatName: () => string;  
+interface Person {
+	name: string;
+	age?: number;
+	formatName: () => string;
 }
+
+export default Person;
